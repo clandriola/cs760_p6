@@ -655,9 +655,9 @@ from graphviz import Graph
 
 # Mutual information values
 mutual_info_values = {
-    ('X', 'Y'): 0.2712,
-    ('X', 'Z'): 0.1773,
-    ('Z', 'Y'): 0.3197
+    ('X', 'Y'): 0.2780,
+    ('X', 'Z'): 0.1328,
+    ('Z', 'Y'): 0.3973
 }
 
 # Create a directed graph
@@ -690,8 +690,8 @@ graph.node('Y', 'Y')
 graph.node('Z', 'Z')
 
 # Add edges with values
-graph.edge('X', 'Y', label=' 0.2712')
-graph.edge('Y', 'Z', label=' 0.3197')
+graph.edge('X', 'Y', label=' 0.2780')
+graph.edge('Y', 'Z', label=' 0.3973')
 
 # Save the graph to a file (e.g., SimpleTree.png)
 graph.render('q3b', view=True)
@@ -713,8 +713,8 @@ dot.node('Y', 'Y')
 dot.node('Z', 'Z')
 
 # Add edges with values
-dot.edge('X', 'Y', label=' 0.2712')
-dot.edge('Y', 'Z', label=' 0.3197')
+dot.edge('X', 'Y', label=' 0.2780')
+dot.edge('Y', 'Z', label=' 0.3973')
 
 # Save the graph to a file (e.g., SimpleTree.png)
 dot.render('q3c', view=True)
